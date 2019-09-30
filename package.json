@@ -1,13 +1,13 @@
 {
   "name": "arts-react-bootstrap-modal",
-  "version": "4.2.0",
-  "description": "",
-  "author": {
-    "name": "Jason Quense",
-    "email": "monastic.panic@gmail.com"
-  },
+  "version": "4.2.1",
+  "description": "React Bootstrap Modal ===================================",
+  "author": "Jason Quense <monastic.panic@gmail.com>",
   "main": "lib/Modal.js",
-  "repository": "ArtsrunKar/react-bootstrap-modal",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArtsrunKar/react-bootstrap-modal.git"
+  },
   "license": "MIT",
   "keywords": [
     "react-boostrap-modal",
@@ -80,5 +80,14 @@
     "prop-types-extra": "^1.1.0",
     "react-overlays": "^0.8.0",
     "react-transition-group": "^2.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/ArtsrunKar/react-bootstrap-modal/issues"
+  },
+  "homepage": "https://github.com/ArtsrunKar/react-bootstrap-modal#readme",
+  "directories": {
+    "example": "examples",
+    "lib": "lib",
+    "test": "test"
   }
 }

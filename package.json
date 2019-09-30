@@ -1,5 +1,5 @@
 {
-  "name": "react-bootstrap-modal",
+  "name": "arts-react-bootstrap-modal",
   "version": "4.2.0",
   "description": "",
   "author": {
@@ -7,7 +7,7 @@
     "email": "monastic.panic@gmail.com"
   },
   "main": "lib/Modal.js",
-  "repository": "jquense/react-bootstrap-modal",
+  "repository": "ArtsrunKar/react-bootstrap-modal",
   "license": "MIT",
   "keywords": [
     "react-boostrap-modal",

@@ -7,26 +7,19 @@ class ModalTitle extends React.Component {
     /**
      * A css class applied to the Component
      */
-    modalPrefix: PropTypes.string
-  }
+    modalPrefix: PropTypes.string,
+  };
 
   static getDefaultPrefix() {
-    return 'modal'
+    return 'btsModal';
   }
 
   render() {
     let { modalPrefix, className, ...props } = this.props;
     let prefix = modalPrefix || ModalTitle.getDefaultPrefix();
 
-    return (
-      <h4
-        {...props}
-        className={cn(className,  prefix + '-title')}
-      />
-    );
+    return <h4 {...props} className={cn(className, prefix + '-title')} />;
   }
 }
 
-
-
-export default ModalTitle
+export default ModalTitle;

@@ -1,6 +1,6 @@
 {
   "name": "arts-react-bootstrap-modal",
-  "version": "4.2.1",
+  "version": "4.2.3",
   "description": "React Bootstrap Modal ===================================",
   "author": "Jason Quense <monastic.panic@gmail.com>",
   "main": "lib/Modal.js",
@@ -48,7 +48,6 @@
     "babel-eslint": "^8.0.1",
     "babel-jest": "^23.0.1",
     "babel-preset-jason": "^3.1.1",
-    "bootstrap": "^3.3.7",
     "chai": "^4.1.2",
     "cpy-cli": "^1.0.0",
     "enzyme": "^3.3.0",

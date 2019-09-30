@@ -5,11 +5,10 @@ import cn from 'classnames';
 import Dismiss from './Dismiss';
 
 class ModalHeader extends React.Component {
+  static _isModalHeader = true;
 
-  static _isModalHeader = true
-
-  static getDefaultPrefix(){
-    return 'modal'
+  static getDefaultPrefix() {
+    return 'btsModal';
   }
   static propTypes = {
     closeButton: PropTypes.bool,
@@ -19,16 +18,16 @@ class ModalHeader extends React.Component {
     modalPrefix: PropTypes.string,
 
     'aria-label': PropTypes.string,
-  }
+  };
 
   static defaultProps = {
     closeButton: false,
     'aria-label': 'Close Modal',
-  }
+  };
 
   static contextTypes = {
-    onModalHide: PropTypes.func
-  }
+    onModalHide: PropTypes.func,
+  };
 
   render() {
     let {
@@ -37,29 +36,22 @@ class ModalHeader extends React.Component {
       children,
       className,
       'aria-label': label,
-      ...props } = this.props;
+      ...props
+    } = this.props;
 
     let prefix = modalPrefix || ModalHeader.getDefaultPrefix();
 
     return (
-      <div
-        {...props}
-        className={cn(className,  prefix + '-header')}
-      >
-        {closeButton &&
-          <Dismiss
-            className='close'
-            aria-label={label}
-          >
-            <span aria-hidden="true">
-              &times;
-            </span>
+      <div {...props} className={cn(className, prefix + '-header')}>
+        {closeButton && (
+          <Dismiss className="close" aria-label={label}>
+            <span aria-hidden="true">&times;</span>
           </Dismiss>
-        }
+        )}
         {children}
       </div>
-    )
+    );
   }
 }
 
-export default ModalHeader
+export default ModalHeader;

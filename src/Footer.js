@@ -3,9 +3,8 @@ import PropTypes from 'prop-types';
 import cn from 'classnames';
 
 class ModalFooter extends React.Component {
-
   static getDefaultPrefix() {
-    return 'modal'
+    return 'btsModal';
   }
 
   render() {
@@ -24,8 +23,7 @@ ModalFooter.propTypes = {
   /**
    * A css class applied to the Component
    */
-  modalPrefix: PropTypes.string
+  modalPrefix: PropTypes.string,
 };
 
-
-export default ModalFooter
+export default ModalFooter;

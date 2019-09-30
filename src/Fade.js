@@ -1,13 +1,13 @@
 import React from 'react';
 import Transition, {
   ENTERED,
-  ENTERING
+  ENTERING,
 } from 'react-transition-group/Transition';
 import cn from 'classnames';
 
 const fadeStyles = {
   [ENTERING]: 'in',
-  [ENTERED]: 'in'
+  [ENTERED]: 'in',
 };
 
 class Fade extends React.Component {
@@ -26,8 +26,8 @@ class Fade extends React.Component {
               'fade',
               className,
               children.props.className,
-              fadeStyles[status]
-            )
+              fadeStyles[status],
+            ),
           })
         }
       </Transition>
